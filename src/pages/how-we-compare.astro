@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CONFIDENCE } from '../lib/site';
+import { CONFIDENCE, CONTACT_EMAIL } from '../lib/site';
 ---
 <BaseLayout title="How we compare" description="How this site researches pricing and features, what the price-source labels mean, and what we have and have not tested.">
   <div class="wrap prose">
@@ -25,6 +25,6 @@ import { CONFIDENCE } from '../lib/site';
     <p>Some outbound links are affiliate links, and we may earn a commission when you buy. Whether a vendor has an affiliate program does not decide whether it is listed or how it is described. Details are on the <a href="/affiliate-disclosure/">affiliate disclosure</a> page.</p>
 
     <h2>Corrections</h2>
-    <p>Prices and plans change often, and every listing shows the date it was last checked. If something is out of date, tell us and we will review it against the vendor's page.</p>
+    <p>Prices and plans change often, and every listing shows the date it was last checked. If something is out of date, tell us and we will review it against the vendor's page.{CONTACT_EMAIL && <> Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</>}</p>
   </div>
 </BaseLayout>

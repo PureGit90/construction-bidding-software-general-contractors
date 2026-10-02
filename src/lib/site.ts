@@ -8,8 +8,8 @@ export const SITE_DESCRIPTION =
 // Nothing is crawlable until GATE approval. /publish-directory sets PUBLIC_NOINDEX=false.
 export const NOINDEX = import.meta.env.PUBLIC_NOINDEX !== 'false';
 
-// Left null until Marco supplies an address at GATE; pages omit the contact line when null.
-export const CONTACT_EMAIL: string | null = null;
+// Contact address shown on the legal and corrections pages; pages omit the line when null.
+export const CONTACT_EMAIL: string | null = 'sunshinesolutions305@outlook.com';
 
 export const CATEGORIES = [
   {
