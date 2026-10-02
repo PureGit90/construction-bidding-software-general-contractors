@@ -1,6 +1,6 @@
-// Working brand name. The domain is not chosen yet; this and the tagline are
+// Brand name, matched to the approved domain constructionbiddingsoftwarecompared.com. This and the tagline are
 // the only places the brand appears in code, so renaming is a one-file change.
-export const SITE_NAME = 'BidSheet';
+export const SITE_NAME = 'Construction Bidding Software Compared';
 export const TAGLINE = 'Construction bidding software, compared by who pays.';
 export const SITE_DESCRIPTION =
   'Prices, who pays and when to skip each tool: 21 bid management, takeoff and estimating products for general contractors and subcontractors.';

@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE_NAME, TAGLINE, NOINDEX } from '../lib/site';
+import { SITE_NAME, NOINDEX } from '../lib/site';
 
 export interface Props {
   title: string;
@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const { title, description, jsonLd, path = Astro.url.pathname } = Astro.props;
-const fullTitle = title === SITE_NAME ? `${SITE_NAME}: ${TAGLINE}` : `${title} | ${SITE_NAME}`;
+const fullTitle = title === SITE_NAME ? `${SITE_NAME}: prices, who pays, who each tool fits` : `${title} | ${SITE_NAME}`;
 const ogImage = new URL('/og-image.png', Astro.site ?? 'https://example.com').toString();
 const pageUrl = new URL(path, Astro.site ?? 'https://example.com').toString();
 const ld = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
@@ -41,7 +41,8 @@ const ld = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="/" aria-label={`${SITE_NAME} home`}>
-          <img src="/logo.png" alt="" width="170" height="45" />
+          <img src="/logo-mark.png" alt="" width="35" height="28" />
+          <span>{SITE_NAME}</span>
         </a>
         <nav class="nav" aria-label="Main">
           <a href="/category/bid-networks/">Bid networks</a>
