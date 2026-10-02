@@ -1,0 +1,22 @@
+{
+  "name": "PlanHub",
+  "directoryType": "software-tool",
+  "summary": "A project-finder and bid network with a plan room, takeoff and bid tracking. Lists 400,000+ subcontractors and 55,000+ general contractors.",
+  "differentiator": "The reverse of BuildingConnected: GCs use it free and subcontractors pay, with the subscription price stepping up by the radius of projects you want to see. If you bid inside one metro area the 50-mile tier is the cheaper network; if you travel for work, each wider radius costs more.",
+  "url": "https://planhub.com/",
+  "pricing": "Registration is free. Third-party sources report Premier at $1,999 per year (50-mile radius), $2,349 (100 miles) and $3,299 (200 miles) for subcontractors, and GC add-ons from $91 per month (takeoff) and $141 per month (estimation). Sources disagree on some figures.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "both",
+  "whoPays": "Sub pays (price by project radius); GC free, takeoff and estimation are paid add-ons",
+  "entryPrice": "Free for GCs; subs reported from $1,999 per year",
+  "pricingConfidence": "third-party",
+  "bestFor": "Subcontractors who bid within a defined region, and GCs who want free access to a large sub pool.",
+  "skipIf": "You bid across many states and need the widest radius on a small budget.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.planhub.com/",
+    "https://www.capterra.com/p/179042/PlanHub/pricing/",
+    "https://constructionbids.ai/resources/planhub-alternatives"
+  ]
+}

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONFIDENCE } from '../lib/site';
+---
+<BaseLayout title="How we compare" description="How this site researches pricing and features, what the price-source labels mean, and what we have and have not tested.">
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / How we compare</p>
+    <h1>How we compare</h1>
+    <p class="lead">This site compares construction bidding, takeoff and estimating software on the things that cost buyers money: the real price, who pays, and which plan unlocks bidding.</p>
+
+    <h2>What we have and have not done</h2>
+    <p>We have read each vendor's product and pricing pages, and named third-party sources where a vendor does not publish a price. <strong>We have not hands-on tested these tools.</strong> The "what sets it apart" notes are comparisons drawn from public pricing, plan limits and vendor documentation, not from using the software. Where a vendor's own claims are the only evidence, we say so.</p>
+
+    <h2>What the price labels mean</h2>
+    <ul>
+      <li><strong>{CONFIDENCE.vendor.label}.</strong> {CONFIDENCE.vendor.note}</li>
+      <li><strong>{CONFIDENCE['third-party'].label}.</strong> {CONFIDENCE['third-party'].note} Sources often disagree, and when they do we show the range.</li>
+      <li><strong>{CONFIDENCE.quote.label}.</strong> {CONFIDENCE.quote.note} We do not estimate a number.</li>
+    </ul>
+
+    <h2>How tools are chosen and ordered</h2>
+    <p>We list tools that a contractor could reasonably use to find, invite, price or compare bids. Tools are shown in alphabetical order. Nobody pays to be listed or to be placed higher, and the order never reflects a commission.</p>
+
+    <h2>Money</h2>
+    <p>Some outbound links are affiliate links, and we may earn a commission when you buy. Whether a vendor has an affiliate program does not decide whether it is listed or how it is described. Details are on the <a href="/affiliate-disclosure/">affiliate disclosure</a> page.</p>
+
+    <h2>Corrections</h2>
+    <p>Prices and plans change often, and every listing shows the date it was last checked. If something is out of date, tell us and we will review it against the vendor's page.</p>
+  </div>
+</BaseLayout>

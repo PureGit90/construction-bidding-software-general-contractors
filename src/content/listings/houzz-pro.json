@@ -1,0 +1,21 @@
+{
+  "name": "Houzz Pro",
+  "directoryType": "software-tool",
+  "summary": "Business management for design and construction pros with CRM, proposals, estimates, takeoffs, 3D floor plans and lead generation.",
+  "differentiator": "Built around client-facing proposals, CRM and lead generation, with estimating and takeoffs attached, rather than around commercial bid invitations. Pricing differs a lot by source: Starter reported at $65 to $85, Pro at $199 and Ultimate at $399 to $499 per month, with extra users at $60 per month in one source.",
+  "url": "https://pro.houzz.com/",
+  "pricing": "Not confirmed on the vendor page. Third-party sources report Starter $65 to $85, Essential $99 to $129, Pro $199 and Ultimate $399 to $499 per month, with extra users reported at $60 per month.",
+  "address": null,
+  "category": "All-in-one contractor platforms",
+  "side": "residential",
+  "whoPays": "Subscriber pays per plan plus per extra user",
+  "entryPrice": "Reported $65 to $85 per month",
+  "pricingConfidence": "third-party",
+  "bestFor": "Remodelers and designers who want leads, CRM and estimates in one tool.",
+  "skipIf": "You respond to commercial invitations to bid and level sub quotes.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.capterra.com/p/199689/Houzz-Pro/pricing/",
+    "https://www.itqlick.com/houzz-pro/pricing"
+  ]
+}

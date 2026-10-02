@@ -1,0 +1,21 @@
+{
+  "name": "SmartBid",
+  "directoryType": "software-tool",
+  "summary": "A GC-side bid management tool, owned by ConstructConnect, for managing the sub database, prequalification, invitations and bid comparison.",
+  "differentiator": "Subs invited to bid or prequalify pay nothing; the GC pays an annual license that scales with users. The standard license includes the sub database, prequalification, unlimited online plan-room projects and the BidTabs comparison tool, with Procore and Autodesk BIM 360 integrations. Faxing to subs is available at 8 cents a page, and on-site training costs extra.",
+  "url": "https://smartbid.co/",
+  "pricing": "Not published. SmartBid says licenses are annual and scale with the number of users. Faxing is 8 cents per page and on-site training costs extra.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "gc",
+  "whoPays": "GC pays per user per year; invited subs free",
+  "entryPrice": "GC license, price not published",
+  "pricingConfidence": "quote",
+  "bestFor": "GCs that want invitations, prequalification and bid leveling in one license with a Procore or Autodesk link.",
+  "skipIf": "You are a sub looking for leads. This tool does not find work.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://smartbid.co/construction-bid-software-pricing",
+    "https://www.constructconnect.com/"
+  ]
+}

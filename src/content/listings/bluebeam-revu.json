@@ -1,0 +1,20 @@
+{
+  "name": "Bluebeam Revu",
+  "directoryType": "software-tool",
+  "summary": "PDF markup and measurement software widely used for takeoff on drawings.",
+  "differentiator": "A markup tool first and a takeoff tool second. Basics ($260 per user per year) measures length and area only; count, volume and angle need Core ($330), and Quantity Link to Excel needs Complete ($440). It is the cheapest takeoff route here per year, but the estimate itself still lives in a spreadsheet.",
+  "url": "https://www.bluebeam.com/",
+  "pricing": "Basics $260, Core $330, Complete $440 and Max $590 per user per year. Max is described as introductory pricing.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "both",
+  "whoPays": "Subscriber pays per user per year",
+  "entryPrice": "$260 per user per year",
+  "pricingConfidence": "vendor",
+  "bestFor": "Small teams that already estimate in Excel and want to measure PDFs cheaply.",
+  "skipIf": "You want takeoff quantities to flow into costed estimates and proposals automatically.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.bluebeam.com/pricing/"
+  ]
+}

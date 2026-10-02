@@ -1,0 +1,20 @@
+{
+  "name": "STACK",
+  "directoryType": "software-tool",
+  "summary": "Cloud takeoff and estimating with plan measurement, assemblies, proposals and optional field and project management.",
+  "differentiator": "Offers a free version of Takeoff & Estimate, so you can run a live bid through it before paying the listed $299 per user per month. STACK says most teams are running in a few hours, which is its argument against desktop takeoff tools.",
+  "url": "https://www.stackct.com/",
+  "pricing": "Takeoff & Estimate starts at $299 per user per month, Build & Operate at $49 per user per month and the full platform at $348 per user per month. A free version of Takeoff & Estimate and a two-week trial of Build & Operate are offered.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "both",
+  "whoPays": "Subscriber pays per user",
+  "entryPrice": "Free version; paid from $299 per user per month",
+  "pricingConfidence": "vendor",
+  "bestFor": "Estimators who want to test cloud takeoff on a real bid for free first.",
+  "skipIf": "You only measure a few simple plans a month; a PDF tool costs far less.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.stackct.com/pricing/"
+  ]
+}

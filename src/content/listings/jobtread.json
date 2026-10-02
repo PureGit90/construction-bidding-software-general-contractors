@@ -1,0 +1,20 @@
+{
+  "name": "JobTread",
+  "directoryType": "software-tool",
+  "summary": "Estimating, budgeting, proposals, scheduling and project tracking for small and mid-size contractors.",
+  "differentiator": "There are no feature tiers. Every plan has every feature, and the price follows internal users only: a $199 per month base with one user included and $20 for each user from 2 to 10 ($16 on annual billing). Customers, vendors and subs get free portal access, so inviting 30 subs to quote does not raise the bill.",
+  "url": "https://www.jobtread.com/",
+  "pricing": "$199 per month base with one internal user included. Additional internal users: $20 each for 2 to 10, $15 for 11 to 20, $10 for 21 to 30 and $5 beyond; annual billing is about 20 percent less. No setup fees or contract, no free trial, and a 30-day money-back guarantee on monthly plans.",
+  "address": null,
+  "category": "All-in-one contractor platforms",
+  "side": "both",
+  "whoPays": "Subscriber pays; base fee plus per internal user",
+  "entryPrice": "$199 per month, 1 user included",
+  "pricingConfidence": "vendor",
+  "bestFor": "Contractors who want to control cost by headcount, not by feature tier.",
+  "skipIf": "You want a free trial before paying.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.jobtread.com/pricing"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Bidtracer",
+  "directoryType": "software-tool",
+  "summary": "A cloud CRM, bid tracker and invitation-to-bid tool for mechanical, electrical and controls subcontractors and the manufacturer reps who supply them.",
+  "differentiator": "Built around the sub and manufacturer-rep relationship, where most tools on this list start from the GC. It bundles a construction CRM, an ITB tool, estimating modules for building automation and security, and a takeoff module. Customers named on its site include Comfort Systems USA and Ferguson.",
+  "url": "https://www.bidtracer.com/",
+  "pricing": "Not published on the vendor site.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "sub",
+  "whoPays": "Subscriber pays; pricing not published",
+  "entryPrice": "Quote only",
+  "pricingConfidence": "quote",
+  "bestFor": "Mechanical, electrical and controls subs, and manufacturer reps tracking who is bidding what.",
+  "skipIf": "You are a GC or a residential contractor.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.bidtracer.com/"
+  ]
+}

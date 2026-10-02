@@ -1,0 +1,21 @@
+{
+  "name": "Kahua",
+  "directoryType": "software-tool",
+  "summary": "An owner-and-contractor construction management platform with a bid management module that ties released bids to budgeted resources.",
+  "differentiator": "Aimed at large, complex capital programs with formal approvals; the vendor claims 2,500+ customers and 70,000+ projects. Bid packages link to the budget, which suits owners and GCs running multi-party programs. It is more platform than a contractor needs to send ten invitations a month.",
+  "url": "https://kahua.com/",
+  "pricing": "No public list price. Third-party listings disagree (one cites $690 per user, another from $49 per month), so treat both as unreliable and get a quote.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "gc",
+  "whoPays": "Owner or GC pays; quote only",
+  "entryPrice": "Quote only",
+  "pricingConfidence": "quote",
+  "bestFor": "Owners, program managers and large GCs running multi-party projects.",
+  "skipIf": "You want a light bid tool for a small team.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.kahua.com/",
+    "https://kahua.com/solutions/bid-management/"
+  ]
+}

@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CATEGORIES } from '../lib/site';
+
+const nets = (await getCollection('listings'))
+  .filter((l) => l.data.category === CATEGORIES[0].name)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout title="Who pays on each bid network" description="Bid networks charge either the general contractor or the subcontractor. Here is which side pays on BuildingConnected, PlanHub, SmartBid, ConstructConnect and Procore.">
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / Who pays</p>
+    <h1>Who pays on each bid network</h1>
+    <p class="lead">Every bid network has a side that pays and a side that responds free. Vendors seldom say which, and it decides whether the tool is cheap or expensive for you.</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>If you are a general contractor,</strong> BuildingConnected and SmartBid are paid by the GC, and the subs you invite respond free. Procore and Kahua also bill the contractor or owner. PlanHub is reported to be free for GCs, with paid add-ons for takeoff and estimation.</li>
+      <li><strong>If you are a subcontractor,</strong> you can answer invitations on BuildingConnected and SmartBid for free. PlanHub and ConstructConnect Project Intelligence are the ones that charge you, in exchange for finding projects instead of waiting for invitations.</li>
+    </ul>
+
+    <h2>Side by side</h2>
+  </div>
+  <div class="wrap">
+    <div class="table-wrap">
+      <table>
+        <caption>Bid networks: who pays</caption>
+        <thead><tr><th scope="col">Tool</th><th scope="col">Who pays</th><th scope="col">Entry price</th></tr></thead>
+        <tbody>
+          {nets.map((l) => (
+            <tr>
+              <th scope="row"><a href={`/listings/${l.id}/`}>{l.data.name}</a></th>
+              <td data-label="Who pays">{l.data.whoPays}</td>
+              <td data-label="Entry price">{l.data.entryPrice}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="wrap prose">
+    <h2>What this means in practice</h2>
+    <p>A network that charges the GC can afford to be free to the subs it wants on the platform, which is why a sub can sit on several of them at no cost. A network that charges the sub has to earn that fee, so it sells project discovery: the tool finds work for you, instead of waiting for an invitation.</p>
+    <p>Pricing for several of these tools is not published. Where a figure comes from a third party, the listing says so and names the source. Treat those numbers as a range to confirm on a sales call.</p>
+    <p class="small">Prices reviewed October 2026. See <a href="/how-we-compare/">how we compare</a> for how we label price sources.</p>
+  </div>
+</BaseLayout>

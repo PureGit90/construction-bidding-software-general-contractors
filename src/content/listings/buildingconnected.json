@@ -1,0 +1,22 @@
+{
+  "name": "BuildingConnected",
+  "directoryType": "software-tool",
+  "summary": "Autodesk's bid network. GCs send invitations to bid and level the returns; subcontractors receive invitations and manage bids from a bid board.",
+  "differentiator": "Priced by who sends the invitation. GCs fund the platform on custom quotes while subcontractors can respond for free, so it is the default for subs chasing large GCs and a poor fit for a small GC that sends a handful of invitations a year. Prequalification and financial-risk data (TradeTapp) are built in, which is the feature to compare against Procore and SmartBid.",
+  "url": "https://construction.autodesk.com/products/buildingconnected/",
+  "pricing": "Not published. Third-party sources report $3,600 to $5,000+ per year for GCs on custom quotes, and some GCs report paying around $22,000 per year. Subcontractors can receive and answer invitations free; Bid Board Pro pricing is not published.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "both",
+  "whoPays": "GC pays; subs respond free (Bid Board Pro is a paid upgrade)",
+  "entryPrice": "GC quote only",
+  "pricingConfidence": "third-party",
+  "bestFor": "Subcontractors invited by large GCs, and GCs with steady sub volume and a budget for a custom quote.",
+  "skipIf": "You need a published price before talking to sales.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://construction.autodesk.com/products/buildingconnected/",
+    "https://downtobid.com/blog/how-much-is-building-connected",
+    "https://constructionbids.ai/blog/buildingconnected-pricing-2026"
+  ]
+}

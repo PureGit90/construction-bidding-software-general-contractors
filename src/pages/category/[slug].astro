@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingTable from '../../components/ListingTable.astro';
+import { CATEGORIES, categoryBySlug, SITE_NAME } from '../../lib/site';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((c) => ({ params: { slug: c.slug } }));
+}
+const { slug } = Astro.params;
+const cat = categoryBySlug(slug!)!;
+const listings = (await getCollection('listings'))
+  .filter((l) => l.data.category === cat.name)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const site = Astro.site ?? new URL('https://example.com');
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: cat.name, numberOfItems: listings.length,
+    itemListElement: listings.map((l, i) => ({ '@type': 'ListItem', position: i + 1, name: l.data.name, url: new URL(`/listings/${l.id}/`, site).toString() })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: SITE_NAME, item: site.toString() },
+    { '@type': 'ListItem', position: 2, name: cat.name } ] },
+];
+---
+<BaseLayout title={cat.name} description={`${cat.short}: ${listings.length} tools compared on price, who pays and who each one fits.`} jsonLd={jsonLd}>
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / {cat.name}</p>
+    <h1>{cat.name}</h1>
+    <p class="lead">{cat.intro}</p>
+    <ListingTable listings={listings} caption={`${cat.name}: ${listings.length} tools`} />
+    <h2>What sets each one apart</h2>
+    <div class="cards">
+      {listings.map((l) => (
+        <article class="card">
+          <h3><a href={`/listings/${l.id}/`}>{l.data.name}</a></h3>
+          <p>{l.data.differentiator}</p>
+          <p class="small"><strong>Best for:</strong> {l.data.bestFor}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,21 @@
+{
+  "name": "Buildxact",
+  "directoryType": "software-tool",
+  "summary": "Estimating and takeoff for residential builders and remodelers, with quoting and scheduling.",
+  "differentiator": "Takeoff and estimating are reported to be in every plan, so you do not climb a tier to unlock them the way you do with Buildertrend. Reported pricing is Foundation $199, Pro $399 ($339 billed annually) and Master $599 per month. It targets small to mid-size residential builders and remodelers, not commercial bid work.",
+  "url": "https://www.buildxact.com/us/",
+  "pricing": "Third-party sources report Foundation $199, Pro $399 monthly or $339 per month billed annually, and Master $599 per month. The vendor pricing page returned an error when checked, so confirm current plans.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "residential",
+  "whoPays": "Subscriber pays per month",
+  "entryPrice": "Reported from $199 per month",
+  "pricingConfidence": "third-party",
+  "bestFor": "Residential builders and remodelers who want estimating first.",
+  "skipIf": "You bid commercial work through invitations to bid.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.softwareadvice.com/construction/buildxact-profile/",
+    "https://www.itqlick.com/buildxact/pricing"
+  ]
+}

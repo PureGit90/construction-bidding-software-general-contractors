@@ -1,0 +1,21 @@
+{
+  "name": "PlanSwift",
+  "directoryType": "software-tool",
+  "summary": "Desktop takeoff and estimating with drag-and-drop item building, now sold by ConstructConnect.",
+  "differentiator": "Trade plug-ins for roofing, concrete, earthwork and electrical are separate costs on top of the reported $2,000 per year Professional subscription. Third-party sources report that ConstructConnect ended perpetual licenses in 2025 and moved existing users to annual subscriptions, so anyone who owned PlanSwift outright should check what renewal now costs.",
+  "url": "https://www.planswift.com/",
+  "pricing": "Third-party sources report a Professional subscription at $2,000 per year including updates, support and two hours of training, with trade plug-ins extra. Not confirmed on the vendor page.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "sub",
+  "whoPays": "Subscriber pays per user per year",
+  "entryPrice": "Reported $2,000 per year",
+  "pricingConfidence": "third-party",
+  "bestFor": "Trade subs who build their own assemblies and want desktop speed.",
+  "skipIf": "You want browser-based collaboration across estimators.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.constructconnect.com/",
+    "https://www.softwareadvice.com/construction/planswift-takeoff-estimating-profile/"
+  ]
+}

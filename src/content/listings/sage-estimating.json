@@ -1,0 +1,22 @@
+{
+  "name": "Sage Estimating",
+  "directoryType": "software-tool",
+  "summary": "Commercial estimating software with RSMeans cost-database integration and takeoff links, from Sage.",
+  "differentiator": "Worth it mainly for contractors already on Sage 100 Contractor or Sage 300, because budgets, purchase orders and subcontracts export without rekeying. It is still a server-based product with cloud-adjacent features, and reported costs run from $4,000 to $8,000 per seat per year before the separate RSMeans database subscription.",
+  "url": "https://www.sage.com/en-us/sage-construction/preconstruction/",
+  "pricing": "Not published. Third-party sources report $4,000 to $8,000 per seat per year for Standard, $10,000 to $20,000+ per year for Advanced, RSMeans data at $1,500 to $3,000 per user, and 15 to 20 percent annual maintenance.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "gc",
+  "whoPays": "Subscriber pays per seat; maintenance fees extra",
+  "entryPrice": "Quote; reported $4,000 to $8,000 per seat per year",
+  "pricingConfidence": "third-party",
+  "bestFor": "Commercial GCs and subs on the Sage accounting stack.",
+  "skipIf": "You are a small contractor who wants cloud software and a transparent price.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.sage.com/en-us/sage-construction/preconstruction/",
+    "https://struvia.co/blog/sage-estimating-software-review",
+    "https://www.softwareadvice.com/product/529351-Sage-Estimating/"
+  ]
+}

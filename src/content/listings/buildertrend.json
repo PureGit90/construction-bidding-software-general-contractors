@@ -1,0 +1,21 @@
+{
+  "name": "Buildertrend",
+  "directoryType": "software-tool",
+  "summary": "Construction management for home builders and remodelers with scheduling, selections, client portal, estimating and bid requests.",
+  "differentiator": "Estimating, takeoff and bid requests are reported not to start until the middle Advanced plan, so the real entry price for bidding is that tier. Sources disagree on the figure: $499 per month billed annually against $799 billed monthly. All plans include unlimited users, and onboarding is reported at $500 to $2,000 extra in year one.",
+  "url": "https://buildertrend.com/",
+  "pricing": "Third-party sources report Essential, Advanced and Complete at $339, $499 and $829 per month billed annually, or $499, $799 and $1,099 billed monthly. The estimating suite is reported to start at Advanced. Onboarding is reported at $500 to $2,000. The vendor pricing page returned an error when checked.",
+  "address": null,
+  "category": "All-in-one contractor platforms",
+  "side": "residential",
+  "whoPays": "Subscriber pays per plan; unlimited users",
+  "entryPrice": "Bidding starts at Advanced, reported $499 to $799 per month",
+  "pricingConfidence": "third-party",
+  "bestFor": "Established residential builders who want one system for the whole job.",
+  "skipIf": "You mainly need bid comparison for a small team and cannot justify a four-figure monthly plan.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.getonecrew.com/post/buildertrend-pricing",
+    "https://costbench.com/software/construction-management/buildertrend/"
+  ]
+}

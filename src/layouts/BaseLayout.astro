@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+import { SITE_NAME, TAGLINE, NOINDEX } from '../lib/site';
+
+export interface Props {
+  title: string;
+  description: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  hero?: boolean;
+  path?: string;
+}
+
+const { title, description, jsonLd, path = Astro.url.pathname } = Astro.props;
+const fullTitle = title === SITE_NAME ? `${SITE_NAME}: ${TAGLINE}` : `${title} | ${SITE_NAME}`;
+const ogImage = new URL('/og-image.png', Astro.site ?? 'https://example.com').toString();
+const pageUrl = new URL(path, Astro.site ?? 'https://example.com').toString();
+const ld = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {NOINDEX && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#1a2230" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {ld.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/" aria-label={`${SITE_NAME} home`}>
+          <img src="/logo.png" alt="" width="170" height="45" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="/category/bid-networks/">Bid networks</a>
+          <a href="/category/takeoff-estimating/">Takeoff and estimating</a>
+          <a href="/category/all-in-one/">All-in-one</a>
+          <a href="/who-pays/">Who pays</a>
+          <a href="/how-we-compare/">How we compare</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="links">
+          <a href="/how-we-compare/">How we compare</a>
+          <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+          <a href="/privacy-policy/">Privacy policy</a>
+        </div>
+        <p>Some links on this site are affiliate links. We may earn a commission if you buy through them, at no extra cost to you. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+        <p>Prices and features change often. Check each vendor before you buy. Last data review: October 2026.</p>
+      </div>
+    </footer>
+  </body>
+</html>

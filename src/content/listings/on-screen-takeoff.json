@@ -1,0 +1,21 @@
+{
+  "name": "On-Screen Takeoff",
+  "directoryType": "software-tool",
+  "summary": "ConstructConnect's AI-assisted desktop measurement tool with auto-naming and auto-counting.",
+  "differentiator": "ConstructConnect sells it alongside PlanSwift, so the same company offers two overlapping desktop takeoff products. The choice comes down to workflow, because On-Screen Takeoff leans on AI-assisted measuring and PlanSwift on building items by drag and drop. Reported pricing is around $1,044 per user per year, with training packages of $500 to $5,000 extra.",
+  "url": "https://www.constructconnect.com/products/on-screen-takeoff",
+  "pricing": "Not published. Third-party trackers report from $87 per user per month (about $1,044 per year), up to roughly $1,850 per year depending on bundling, with training extra.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "both",
+  "whoPays": "Subscriber pays per user",
+  "entryPrice": "Reported about $87 per user per month",
+  "pricingConfidence": "third-party",
+  "bestFor": "Estimators who want AI-assisted counting on large plan sets.",
+  "skipIf": "You want a published price before a sales call.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.constructconnect.com/",
+    "https://www.itqlick.com/on-screen-takeoff/pricing"
+  ]
+}

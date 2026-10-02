@@ -1,0 +1,21 @@
+{
+  "name": "Planyard",
+  "directoryType": "software-tool",
+  "summary": "Cost estimating, bid management and project budgeting with Xero, QuickBooks, MYOB, Sage and Procore sync.",
+  "differentiator": "Priced per project manager rather than per company or project: $52 (Estimating), $105 (Essential), $158 (Professional) or $210 (Ultimate) per month, with support staff at $43. Subcontractor quoting automation sits in the top tier, so five project managers on Ultimate would pay $1,050 a month before support seats. A 14-day full-access trial needs no card.",
+  "url": "https://planyard.com/",
+  "pricing": "Estimating $52, Essential $105, Professional $158 and Ultimate $210 per month per project manager; supporting staff $43 each; Enterprise custom. 14-day full-access trial, no credit card, and no limit on simultaneous projects.",
+  "address": null,
+  "category": "All-in-one contractor platforms",
+  "side": "gc",
+  "whoPays": "Subscriber pays per project manager",
+  "entryPrice": "$52 per project manager per month",
+  "pricingConfidence": "vendor",
+  "bestFor": "GCs with one or two project managers running many jobs.",
+  "skipIf": "Your team has many project managers and needs sub quoting automation.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://planyard.com/pricing",
+    "https://planyard.com/general-contractor-bidding-software"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Handoff",
+  "directoryType": "software-tool",
+  "summary": "AI estimating and project management for residential contractors, with estimates generated from photos, blueprints or site walkthroughs.",
+  "differentiator": "The only tool here that builds an estimate from site photos or a walkthrough as well as from plans, and its own page says it is built for residential work, not general contractors or subcontractors. The results it advertises (revenue and time-saved figures) are the vendor's own and are not independently verified here.",
+  "url": "https://www.handoff.ai/",
+  "pricing": "Not published. A 7-day free trial with no credit card is offered.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "residential",
+  "whoPays": "Subscriber pays; pricing not published",
+  "entryPrice": "Quote; 7-day free trial",
+  "pricingConfidence": "quote",
+  "bestFor": "Home builders, remodelers and handymen who quote from site visits.",
+  "skipIf": "You respond to commercial bid invitations.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.handoff.ai/"
+  ]
+}

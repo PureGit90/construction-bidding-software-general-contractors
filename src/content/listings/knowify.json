@@ -1,0 +1,20 @@
+{
+  "name": "Knowify",
+  "directoryType": "software-tool",
+  "summary": "Bidding, contracts, job costing and invoicing for specialty contractors that bill fixed-price and AIA jobs.",
+  "differentiator": "Core handles fixed-price and AIA jobs, but subcontracts, cost-plus and time-and-materials contracts and calculated cost templates only start at Advanced ($329 to $399 per month, 10 users). If you do T&M work you start at the higher tier. Extra users are $29 per month on either plan.",
+  "url": "https://knowify.com/",
+  "pricing": "Core is listed at $99 per month on monthly billing and $149 per month on yearly billing (the pricing page shows both figures; confirm which applies), with one user and $29 per extra user. Advanced is $329 to $399 per month with ten users. Enterprise is custom.",
+  "address": null,
+  "category": "All-in-one contractor platforms",
+  "side": "sub",
+  "whoPays": "Subscriber pays per plan plus per extra user",
+  "entryPrice": "$99 to $149 per month, 1 user",
+  "pricingConfidence": "vendor",
+  "bestFor": "Specialty subcontractors on fixed-price and AIA billing.",
+  "skipIf": "You need cost-plus contracts on a budget.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://knowify.com/pricing/"
+  ]
+}

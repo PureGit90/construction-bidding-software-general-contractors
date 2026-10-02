@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SIDES, CONFIDENCE, SITE_NAME, categoryByName } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const listings = await getCollection('listings');
+  return listings.map((listing) => ({ params: { id: listing.id }, props: { listing, all: listings } }));
+}
+const { listing, all } = Astro.props;
+const d = listing.data;
+const cat = categoryByName(d.category)!;
+const related = all.filter((l) => l.data.category === d.category && l.id !== listing.id).slice(0, 4);
+const site = Astro.site ?? new URL('https://example.com');
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: d.name, description: d.summary, url: d.url,
+    applicationCategory: 'BusinessApplication', applicationSubCategory: d.category },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: SITE_NAME, item: site.toString() },
+    { '@type': 'ListItem', position: 2, name: cat.name, item: new URL(`/category/${cat.slug}/`, site).toString() },
+    { '@type': 'ListItem', position: 3, name: d.name } ] },
+];
+const conf = CONFIDENCE[d.pricingConfidence];
+---
+<BaseLayout title={`${d.name}: price, who pays, and who it fits`} description={`${d.summary} Pricing: ${d.entryPrice}.`} jsonLd={jsonLd}>
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / <a href={`/category/${cat.slug}/`}>{cat.short}</a> / {d.name}</p>
+    <h1>{d.name}</h1>
+    <div class="meta">
+      <span class="badge">{cat.short}</span>
+      <span class="badge">Built for: {SIDES[d.side]}</span>
+      <span class={`badge ${d.pricingConfidence}`}>{conf.label}</span>
+    </div>
+    <p class="lead">{d.summary}</p>
+
+    <div class="panel">
+      <h2>What sets it apart</h2>
+      <p>{d.differentiator}</p>
+    </div>
+
+    <div class="two">
+      <div class="card"><strong>Best for</strong>{d.bestFor}</div>
+      <div class="card"><strong>Skip it if</strong>{d.skipIf}</div>
+    </div>
+
+    <h2>Pricing and who pays</h2>
+    <p><strong>Who pays:</strong> {d.whoPays}</p>
+    <p><strong>Entry price:</strong> {d.entryPrice}</p>
+    {d.pricing && <p>{d.pricing}</p>}
+    <p class="small"><strong>{conf.label}.</strong> {conf.note} Last checked {d.lastChecked}.</p>
+
+    <p><a class="btn" href={d.url} rel="sponsored nofollow noopener" target="_blank">Visit {d.name} (opens in a new tab)</a></p>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      {d.sources.map((s) => <li><a href={s} rel="nofollow noopener" target="_blank">{s}</a></li>)}
+    </ul>
+    <p class="small">We have not hands-on tested this tool. See <a href="/how-we-compare/">how we compare</a>.</p>
+
+    {related.length > 0 && (
+      <>
+        <h2>Other tools in this category</h2>
+        <ul>
+          {related.map((r) => <li><a href={`/listings/${r.id}/`}>{r.data.name}</a>: {r.data.entryPrice}</li>)}
+        </ul>
+      </>
+    )}
+  </div>
+</BaseLayout>

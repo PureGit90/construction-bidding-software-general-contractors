@@ -1,0 +1,21 @@
+{
+  "name": "ConstructConnect Project Intelligence",
+  "directoryType": "software-tool",
+  "summary": "A lead-finding database that searches active projects by trade, location and stage, with curated lead matching.",
+  "differentiator": "This finds work instead of managing bids. ConstructConnect says it covers 825,000+ active projects across 382 metro areas, so a sub can find a project without waiting for an invitation, which BuildingConnected and PlanHub largely depend on. It pays off for a sub that bids public and commercial work all year, and it adds little for a firm whose work comes from three repeat GCs.",
+  "url": "https://www.constructconnect.com/en/products/project-intelligence",
+  "pricing": "Third-party sources report Starter at $129 per month and Professional at $199 per month on annual or quarterly terms, with a Pro plus Takeoff tier on custom pricing. Not confirmed on the vendor page.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "sub",
+  "whoPays": "Sub pays; annual contract",
+  "entryPrice": "Reported from $129 per month",
+  "pricingConfidence": "third-party",
+  "bestFor": "Subs who need a steady supply of new public and commercial leads.",
+  "skipIf": "Most of your work already comes from repeat GCs.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.constructconnect.com/",
+    "https://softwarefinder.com/construction/constructconnect-project-intelligence"
+  ]
+}

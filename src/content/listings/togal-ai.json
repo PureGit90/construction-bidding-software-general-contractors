@@ -1,0 +1,20 @@
+{
+  "name": "Togal.AI",
+  "directoryType": "software-tool",
+  "summary": "AI takeoff that automates area and length measurement from drawings for multiple trades.",
+  "differentiator": "List price matches STACK's takeoff tier ($299 per user per month, billed yearly) but includes unlimited automated takeoffs, and there is no free version or trial: you book a demo first. Trades named on its site range from painting, drywall and flooring to electrical and framing.",
+  "url": "https://www.togal.ai/",
+  "pricing": "Growth is $299 per user per month billed yearly. Business plan is custom for teams of four or more. No free trial; access starts with a demo.",
+  "address": null,
+  "category": "Takeoff and estimating",
+  "side": "both",
+  "whoPays": "Subscriber pays per user",
+  "entryPrice": "$299 per user per month, billed yearly",
+  "pricingConfidence": "vendor",
+  "bestFor": "High-volume estimators in finish trades who want measurement automated.",
+  "skipIf": "You want to try it on a live bid before paying.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.togal.ai/pricing"
+  ]
+}

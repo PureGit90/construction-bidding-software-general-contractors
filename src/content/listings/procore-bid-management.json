@@ -1,0 +1,22 @@
+{
+  "name": "Procore Bid Management",
+  "directoryType": "software-tool",
+  "summary": "Bid creation, bid leveling, trade-partner prequalification and bid-to-subcontract conversion inside the Procore platform.",
+  "differentiator": "Worth buying only as part of the wider Procore platform, where a winning bid converts straight into a subcontract or purchase order with budgets and contracts attached. Procore bills on annual construction volume, not on how many bids you run, so for a small GC it is one of the most expensive routes into bid management on this list.",
+  "url": "https://www.procore.com/bid-management",
+  "pricing": "Not published. Procore prices by annual construction volume. Third-party sources estimate $15,000 to $30,000 per year for contractors running $10M to $50M of work, with unlimited users and storage.",
+  "address": null,
+  "category": "Bid networks and ITB management",
+  "side": "gc",
+  "whoPays": "GC pays; fee scales with annual construction volume, unlimited users",
+  "entryPrice": "Quote; reported $15,000+ per year",
+  "pricingConfidence": "third-party",
+  "bestFor": "Mid-size and larger GCs that want bidding connected to project financials.",
+  "skipIf": "You only need bid invitations and comparison, not a full project platform.",
+  "lastChecked": "2026-10-02",
+  "sources": [
+    "https://www.procore.com/bid-management",
+    "https://www.getonecrew.com/post/procore-pricing",
+    "https://www.scanmanifold.com/blog-posts/procore-pricing-2026-contractors"
+  ]
+}
