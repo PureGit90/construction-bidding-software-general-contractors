@@ -1,0 +1,21 @@
+{
+  "name": "FreshBooks",
+  "directoryType": "software-tool",
+  "summary": "Invoicing and accounting software for service businesses, with estimates and proposals included.",
+  "differentiator": "Estimates and proposals are unlimited on every plan, but the plans cap billable clients: 5 on Lite and 50 on Plus. That is the number to check if you quote many one-off homeowners. Team members cost $11 a month each on every plan, and the promotional rates (Lite at $1 a month for the first year) are not the regular price of $23.",
+  "url": "https://www.freshbooks.com/",
+  "pricing": "Lite $23, Plus $43 and Premium $70 per month at regular price, with a Select tier on custom pricing. Current offers: Lite at $1 per month for a year, Plus and Premium at 80 percent off for three months. Billable clients: 5 on Lite, 50 on Plus, unlimited on Premium and Select. Team members $11 per month each. 30-day free trial and a 30-day money-back guarantee.",
+  "address": null,
+  "category": "Quoting and invoicing for small contractors",
+  "side": "service",
+  "whoPays": "Subscriber pays per plan plus per team member",
+  "entryPrice": "$23 per month regular ($1 per month first-year offer)",
+  "pricingConfidence": "vendor",
+  "bestFor": "Solo contractors and small crews who mainly need invoicing and accounting, with estimates attached.",
+  "skipIf": "You need job scheduling or any bid management; it is accounting first.",
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.freshbooks.com/pricing",
+    "https://www.freshbooks.com/affiliate-program"
+  ]
+}

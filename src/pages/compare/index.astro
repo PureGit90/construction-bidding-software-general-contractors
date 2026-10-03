@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const all = (await getCollection('comparisons')).sort((a, b) => a.data.h1.localeCompare(b.data.h1));
+---
+<BaseLayout title="Comparisons and alternatives" description="Head-to-head comparisons and alternatives for construction bidding, takeoff and estimating software, with real prices and who each tool fits.">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a> / Comparisons</p>
+    <h1>Comparisons and alternatives</h1>
+    <p class="lead">Searching for an alternative to a tool, or choosing between two? These pages put the real prices side by side and say who each option fits.</p>
+    <div class="cards">
+      {all.map((c) => (
+        <article class="card">
+          <h3><a href={`/compare/${c.id}/`}>{c.data.h1}</a></h3>
+          <p>{c.data.lead}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

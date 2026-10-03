@@ -44,6 +44,12 @@ const countIn = (name: string) => listings.filter((l) => l.data.category === nam
     <p class="lead">Pricing is the part vendors hide. Each row says where the price comes from, so you know which numbers to confirm before a call.</p>
     <ListingTable listings={listings} caption="Construction bidding, takeoff and estimating software" filters={true} />
 
+    <h2>Comparisons and guides</h2>
+    <div class="cards">
+      <div class="card"><a class="stretch" href="/compare/"><h3>Alternatives and head-to-heads</h3><p>Procore, Buildertrend and Bluebeam alternatives, and JobTread vs Buildertrend, with real prices.</p></a></div>
+      <div class="card"><a class="stretch" href="/before-you-bid/"><h3>Before you bid</h3><p>Bid bonds and contractor insurance basics: what each is and what owners usually ask for.</p></a></div>
+    </div>
+
     <div class="panel">
       <h2>The question most comparisons skip</h2>
       <p>On bid networks, someone pays and someone responds free. BuildingConnected and SmartBid charge the GC; PlanHub and ConstructConnect charge the subcontractor. Knowing which side you are on changes the whole price comparison. Read <a href="/who-pays/">who pays on each bid network</a>.</p>

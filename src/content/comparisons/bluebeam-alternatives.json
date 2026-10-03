@@ -1,0 +1,85 @@
+{
+  "kind": "alternatives",
+  "title": "Bluebeam Revu alternatives for takeoff: what they cost per user",
+  "h1": "Bluebeam Revu alternatives for takeoff",
+  "description": "Bluebeam is a PDF markup tool with measurement. Four takeoff alternatives that connect quantities to estimates, with the real cost per user per year.",
+  "lead": "Bluebeam is a PDF markup tool that also measures. Alternatives cost much more per user because they take quantities all the way into an estimate.",
+  "subjects": [
+    "bluebeam-revu"
+  ],
+  "why": [
+    "Bluebeam is a markup tool first and a takeoff tool second. Basics measures length and area only; count, volume and angle need Core ($330), and linking quantities to Excel needs Complete ($440). The estimate itself still lives in a spreadsheet.",
+    "The alternatives include estimating, so quantities flow into costed estimates and proposals. The table shows how much more that costs per user per year.",
+    "So the question is less which is better than whether you want measuring, or a full takeoff-to-estimate workflow."
+  ],
+  "picks": [
+    {
+      "id": "stack",
+      "pickIf": "You want takeoff and estimating in the cloud and want to test it for free first.",
+      "watchOut": "Paid Takeoff and Estimate is $299 per user per month."
+    },
+    {
+      "id": "togal-ai",
+      "pickIf": "You want measuring automated across several trades and the per-user price is acceptable.",
+      "watchOut": "There is no free version or trial. You book a demo first."
+    },
+    {
+      "id": "planswift",
+      "pickIf": "You build your own assemblies and want desktop takeoff.",
+      "watchOut": "Trade plug-ins cost extra, and perpetual licenses were reportedly replaced by annual subscriptions in 2025."
+    },
+    {
+      "id": "on-screen-takeoff",
+      "pickIf": "You want AI-assisted counting on large plan sets at a lower reported price than PlanSwift.",
+      "watchOut": "Pricing is not published, and training packages are reported at $500 to $5,000."
+    }
+  ],
+  "table": {
+    "title": "What takeoff costs per user per year",
+    "headers": [
+      "Tool",
+      "List price",
+      "Per year",
+      "Where the price comes from"
+    ],
+    "rows": [
+      [
+        "Bluebeam Revu (Basics to Complete)",
+        "$260 to $440 per year",
+        "$260 to $440",
+        "Vendor"
+      ],
+      [
+        "On-Screen Takeoff",
+        "About $87 per month",
+        "About $1,044",
+        "Third-party reports"
+      ],
+      [
+        "PlanSwift",
+        "About $2,000 per year",
+        "About $2,000",
+        "Third-party reports"
+      ],
+      [
+        "STACK Takeoff and Estimate",
+        "$299 per user per month",
+        "$3,588",
+        "Vendor"
+      ],
+      [
+        "Togal.AI Growth",
+        "$299 per user per month, billed yearly",
+        "$3,588",
+        "Vendor"
+      ]
+    ],
+    "note": "Annual figures multiply the monthly list price by 12. Third-party figures may differ from current vendor quotes."
+  },
+  "verdict": [
+    "Stay with Bluebeam if you measure PDFs and estimate in Excel. It is by far the cheapest option here.",
+    "Move to a takeoff-to-estimate tool if you price many bids a month, where the time saved can outweigh several thousand dollars per user.",
+    "Test before you buy where you can: STACK is the only one here that offers a free version of its takeoff product."
+  ],
+  "lastChecked": "2026-10-03"
+}

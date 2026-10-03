@@ -1,0 +1,21 @@
+{
+  "name": "Housecall Pro",
+  "directoryType": "software-tool",
+  "summary": "Home-service business software with estimates, scheduling, dispatch, invoicing and payments.",
+  "differentiator": "Estimates are in every plan, including Basic ($59 per month billed annually, one user), but the sales proposal tool starts at Max ($299). Its own page says it is built for home-service trades such as HVAC, plumbing, electrical, cleaning and landscaping, and that it is available only in the US and Canada. Card processing starts at 2.59 percent.",
+  "url": "https://www.housecallpro.com/",
+  "pricing": "Basic $59, Essentials $149 and Max $299 per month billed annually; $79, $189 and $329 on monthly billing. Included users are 1, 5 and 8, with additional Max users at $35 per month. A 14-day trial gives full Max access with no card. Month-to-month or annual, no long-term contract. Card processing fees start at 2.59 percent, with a 1 percent fee for bank payments.",
+  "address": null,
+  "category": "Quoting and invoicing for small contractors",
+  "side": "service",
+  "whoPays": "Subscriber pays per plan; Max adds a fee per extra user",
+  "entryPrice": "$59 per month billed annually, 1 user",
+  "pricingConfidence": "vendor",
+  "bestFor": "Home-service trades that want estimates and dispatch in one tool and operate in the US or Canada.",
+  "skipIf": "You bid commercial work through invitations, or work outside the US and Canada.",
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.housecallpro.com/pricing/",
+    "https://www.housecallpro.com/paid-affiliates/"
+  ]
+}

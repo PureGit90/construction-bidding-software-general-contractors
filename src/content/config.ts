@@ -14,7 +14,7 @@ const listings = defineCollection({
     pricing: z.string().nullable().optional(),
     address: z.string().nullable().optional(),
     category: z.string().min(1),
-    side: z.enum(['gc', 'sub', 'both', 'residential']),
+    side: z.enum(['gc', 'sub', 'both', 'residential', 'service']),
     whoPays: z.string().min(1),
     entryPrice: z.string().min(1),
     pricingConfidence: z.enum(['vendor', 'third-party', 'quote']),
@@ -25,4 +25,33 @@ const listings = defineCollection({
   }),
 });
 
-export const collections = { listings };
+const comparisons = defineCollection({
+  type: 'data',
+  schema: z.object({
+    kind: z.enum(['alternatives', 'versus']),
+    title: z.string().min(1),
+    h1: z.string().min(1),
+    description: z.string().min(1),
+    lead: z.string().min(1),
+    // listing ids: one for an alternatives page, two for a versus page
+    subjects: z.array(z.string()).min(1).max(2),
+    why: z.array(z.string()).min(1),
+    picks: z.array(z.object({ id: z.string(), pickIf: z.string(), watchOut: z.string() })).default([]),
+    table: z.object({
+      title: z.string(),
+      headers: z.array(z.string()),
+      rows: z.array(z.array(z.string())),
+      note: z.string().optional(),
+    }).optional(),
+    calc: z.object({
+      title: z.string(),
+      headers: z.array(z.string()),
+      rows: z.array(z.array(z.string())),
+      note: z.string().optional(),
+    }).optional(),
+    verdict: z.array(z.string()).min(1),
+    lastChecked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  }),
+});
+
+export const collections = { listings, comparisons };

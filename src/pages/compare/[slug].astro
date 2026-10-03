@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DataTable from '../../components/DataTable.astro';
+import { SITE_NAME, CONFIDENCE } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const all = await getCollection('comparisons');
+  const listings = await getCollection('listings');
+  return all.map((entry) => ({ params: { slug: entry.id }, props: { entry, listings } }));
+}
+const { entry, listings } = Astro.props;
+const d = entry.data;
+const byId = (id: string) => listings.find((l) => l.id === id)!;
+const subjects = d.subjects.map(byId);
+const site = Astro.site ?? new URL('https://example.com');
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.h1, description: d.description, dateModified: d.lastChecked, author: { '@type': 'Organization', name: SITE_NAME } },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: SITE_NAME, item: site.toString() },
+    { '@type': 'ListItem', position: 2, name: 'Comparisons', item: new URL('/compare/', site).toString() },
+    { '@type': 'ListItem', position: 3, name: d.h1 } ] },
+];
+---
+<BaseLayout title={d.title} description={d.description} jsonLd={jsonLd}>
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/compare/">Comparisons</a> / {d.h1}</p>
+    <h1>{d.h1}</h1>
+    <p class="lead">{d.lead}</p>
+    <p class="small">Prices last checked {d.lastChecked}. Where a price is third-party reported or quote only, it says so. See <a href="/how-we-compare/">how we compare</a>.</p>
+
+    {d.kind === 'alternatives' && (
+      <div class="panel">
+        <h2>About {subjects[0].data.name}</h2>
+        <p>{subjects[0].data.summary} <a href={`/listings/${subjects[0].id}/`}>Full {subjects[0].data.name} listing</a>.</p>
+        <p class="small"><strong>Entry price:</strong> {subjects[0].data.entryPrice}. <strong>Who pays:</strong> {subjects[0].data.whoPays}. <strong>Price source:</strong> {CONFIDENCE[subjects[0].data.pricingConfidence].label}.</p>
+      </div>
+    )}
+    {d.kind === 'versus' && (
+      <div class="two">
+        {subjects.map((s) => (
+          <div class="card"><strong><a href={`/listings/${s.id}/`}>{s.data.name}</a></strong>{s.data.summary}</div>
+        ))}
+      </div>
+    )}
+
+    <h2>{d.kind === 'alternatives' ? 'Why people look for an alternative' : 'The short version'}</h2>
+    {d.why.map((p) => <p>{p}</p>)}
+  </div>
+
+  {d.table && <div class="wrap"><DataTable title={d.table.title} headers={d.table.headers} rows={d.table.rows} note={d.table.note} /></div>}
+  {d.calc && <div class="wrap" style="margin-top:24px"><DataTable title={d.calc.title} headers={d.calc.headers} rows={d.calc.rows} note={d.calc.note} /></div>}
+
+  {d.picks.length > 0 && (
+    <div class="wrap">
+      <h2>The alternatives, and who each fits</h2>
+      <div class="cards">
+        {d.picks.map((p) => {
+          const l = byId(p.id);
+          return (
+            <article class="card">
+              <h3><a href={`/listings/${l.id}/`}>{l.data.name}</a></h3>
+              <p class="small">{l.data.entryPrice}. {CONFIDENCE[l.data.pricingConfidence].label}.</p>
+              <p><strong>Pick it if:</strong> {p.pickIf}</p>
+              <p><strong>Watch out:</strong> {p.watchOut}</p>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  )}
+
+  <div class="wrap prose">
+    <h2>What we would do</h2>
+    <ul>{d.verdict.map((v) => <li>{v}</li>)}</ul>
+    <p class="small">We have not hands-on tested these tools. Check each vendor before you buy, because plans and prices change.</p>
+  </div>
+</BaseLayout>

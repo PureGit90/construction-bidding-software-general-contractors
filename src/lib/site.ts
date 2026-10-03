@@ -3,7 +3,7 @@
 export const SITE_NAME = 'Construction Bidding Software Compared';
 export const TAGLINE = 'Construction bidding software, compared by who pays.';
 export const SITE_DESCRIPTION =
-  'Prices, who pays and when to skip each tool: 21 bid management, takeoff and estimating products for general contractors and subcontractors.';
+  'Prices, who pays and when to skip each tool: 25 bid management, takeoff, estimating and quoting products for general contractors and subcontractors.';
 
 // Nothing is crawlable until GATE approval. /publish-directory sets PUBLIC_NOINDEX=false.
 export const NOINDEX = import.meta.env.PUBLIC_NOINDEX !== 'false';
@@ -33,6 +33,13 @@ export const CATEGORIES = [
     intro:
       'These platforms bundle estimating and bid comparison with scheduling, job costing and invoicing. The question to ask of each is which plan unlocks bidding, because on several of them it is not the cheapest one.',
   },
+  {
+    slug: 'small-contractor-quoting',
+    name: 'Quoting and invoicing for small contractors',
+    short: 'Small-contractor quoting',
+    intro:
+      'These tools are built for owner-operators and small trade crews who quote homeowners and small commercial jobs, then invoice and get paid. They are not bid-management systems: none sends invitations to bid or levels subcontractor quotes. They belong here because small contractors comparing estimating software often end up choosing among them, and the pricing rules differ a lot.',
+  },
 ] as const;
 
 export const SIDES: Record<string, string> = {
@@ -40,6 +47,7 @@ export const SIDES: Record<string, string> = {
   sub: 'Subcontractors',
   both: 'GCs and subs',
   residential: 'Residential builders',
+  service: 'Trade and service contractors',
 };
 
 export const CONFIDENCE: Record<string, { label: string; note: string }> = {

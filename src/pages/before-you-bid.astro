@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME } from '../lib/site';
+const site = Astro.site ?? new URL('https://example.com');
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: 'Before you bid: bid bonds and contractor insurance basics', description: 'What a bid bond is, how much it covers, and the insurance contractors are commonly asked to show before submitting a bid.', dateModified: '2026-10-03', author: { '@type': 'Organization', name: SITE_NAME } },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: SITE_NAME, item: site.toString() },
+    { '@type': 'ListItem', position: 2, name: 'Before you bid' } ] },
+];
+---
+<BaseLayout title="Before you bid: bid bonds and contractor insurance basics" description="What a bid bond is, how much it usually covers, how the SBA program works, and which insurance contractors are commonly asked to show before submitting a bid." jsonLd={jsonLd}>
+  <div class="wrap prose">
+    <p class="crumbs"><a href="/">Home</a> / Before you bid</p>
+    <h1>Before you bid: bid bonds and contractor insurance basics</h1>
+    <p class="lead">Bidding software handles the paperwork of a bid. Two other things can decide whether you may submit at all: a bid bond and proof of insurance. Here is what each one is.</p>
+    <p class="small">This page is general information, not insurance, legal or financial advice. Requirements vary by project, owner and state. Your bid documents and a licensed agent are the final word. Last reviewed 2026-10-03.</p>
+
+    <h2>Bid bonds</h2>
+    <h3>What a bid bond is</h3>
+    <p>A bid bond is a guarantee from a surety company to the project owner that you will honor your bid and, if you win, sign the contract and provide any required performance and payment bonds. It involves three parties: you, the owner and the surety. It is not insurance for you. If the surety pays out a claim, you must repay it.</p>
+    <h3>How much it covers and who asks for it</h3>
+    <ul>
+      <li><strong>Size:</strong> usually 5 to 10 percent of the bid for most projects. State and municipal work is typically 5 to 10 percent, federal work can be up to 20 percent, and private owners decide for themselves.</li>
+      <li><strong>Who asks:</strong> public owners commonly require one, and private owners may. It is generally asked of prime contractors, and subcontractors are often exempt.</li>
+      <li><strong>If you win and walk away:</strong> the owner can claim the difference between your bid and the next accepted bid.</li>
+    </ul>
+    <h3>What it costs</h3>
+    <p>Some sureties issue bid bonds at no charge and earn their premium on the performance and payment bonds if you win the work, so ask what yours charges. Under the SBA Surety Bond Guarantee program there is no fee for bid bonds, and the fee for performance and payment bonds is 0.6 percent of the contract price.</p>
+    <h3>The SBA Surety Bond Guarantee</h3>
+    <p>The SBA guarantees bid, performance and payment bonds issued by participating surety companies, which can help small businesses that would not otherwise qualify. It covers contracts up to $9 million for non-federal work and $14 million for federal work. You apply through an SBA-authorized surety agency, and the surety still looks at your credit, capacity and character.</p>
+    <h3>How to get one</h3>
+    <p>You get a bid bond through a surety agent or an agency that writes contract bonds. Expect the surety to review your finances and track record, because it is judging whether you can complete the job. Start before the bid deadline, not on it.</p>
+
+    <h2>Contractor insurance</h2>
+    <h3>The coverages you will see mentioned</h3>
+    <p>The SBA lists these common types of business insurance:</p>
+    <ul>
+      <li><strong>General liability:</strong> bodily injury, property damage, medical expenses and the cost of defending lawsuits.</li>
+      <li><strong>Professional liability:</strong> claims of errors and negligence in the services you provide.</li>
+      <li><strong>Workers' compensation:</strong> for businesses with employees. Rules are set by each state.</li>
+      <li><strong>Commercial property:</strong> damage to business assets from fire, weather or vandalism.</li>
+      <li><strong>Business owner's policy:</strong> a bundle of the usual coverages.</li>
+    </ul>
+    <p>Bid documents often name other coverages and limits, such as builder's risk or commercial auto, so read them closely. Some states add their own requirements.</p>
+    <h3>What owners ask to see</h3>
+    <p>Bid documents commonly list the coverages and limits they require, and owners may ask for proof of insurance. Check the instructions to bidders before you submit, and ask your agent early about the limits a given project needs.</p>
+    <h3>Where to get quotes</h3>
+    <p>An independent agent can quote several carriers. Some carriers also sell small-business coverage online, such as <a href="https://www.nextinsurance.com/" rel="nofollow noopener" target="_blank">Next Insurance</a> and <a href="https://www.thimble.com/" rel="nofollow noopener" target="_blank">Thimble</a>. These are examples, not recommendations, and we do not rank insurers.</p>
+
+    <h2>A short checklist before you submit</h2>
+    <ul>
+      <li>Find the bond and insurance requirements in the bid documents.</li>
+      <li>Ask a surety agent about a bid bond early if one is required.</li>
+      <li>Ask your insurance agent whether your current limits meet the project's requirements.</li>
+      <li>Confirm any contractor license your state or the owner requires.</li>
+      <li>Check whether the owner prequalifies bidders. Some bid networks, such as <a href="/listings/buildingconnected/">BuildingConnected</a>, include prequalification and financial-risk data.</li>
+    </ul>
+
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li><a href="https://www.procore.com/library/bid-bonds" rel="nofollow noopener" target="_blank">Procore: Bid bonds</a></li>
+      <li><a href="https://www.sba.gov/loans/additional-funding-opportunities/surety-bonds/" rel="nofollow noopener" target="_blank">SBA: Surety bonds</a></li>
+      <li><a href="https://www.sba.gov/business-guide/launch-your-business/get-business-insurance" rel="nofollow noopener" target="_blank">SBA: Get business insurance</a></li>
+    </ul>
+    <p class="small">Some links on this site are affiliate links. We do not currently earn from the carriers named above. See the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,98 @@
+{
+  "kind": "versus",
+  "title": "JobTread vs Buildertrend: price, bidding tools and who each fits",
+  "h1": "JobTread vs Buildertrend",
+  "description": "JobTread charges for people in your office; Buildertrend charges for a plan. A side-by-side of pricing, where estimating starts, users and onboarding, with the monthly cost by team size.",
+  "lead": "Both run a job from estimate to invoice. The real difference is how each charges: JobTread charges for people in your office, Buildertrend charges for a plan.",
+  "subjects": [
+    "jobtread",
+    "buildertrend"
+  ],
+  "why": [
+    "That makes the cheaper tool depend on headcount. For a small office JobTread is well below Buildertrend's reported Advanced price, and as the office grows the gap closes.",
+    "JobTread's prices come from its own pricing page. Buildertrend's come from third-party reports that disagree with each other, so treat the Buildertrend side as a range to confirm."
+  ],
+  "picks": [],
+  "table": {
+    "title": "Side by side",
+    "headers": [
+      "",
+      "JobTread",
+      "Buildertrend"
+    ],
+    "rows": [
+      [
+        "Pricing model",
+        "$199 base per month with 1 user, plus $20 per extra internal user (2 to 10)",
+        "Three plans; reported $339 / $499 / $829 per month billed annually, or $499 / $799 / $1,099 monthly"
+      ],
+      [
+        "Where estimating and bid requests start",
+        "Every plan; no feature tiers",
+        "Reported to start at the middle Advanced plan"
+      ],
+      [
+        "Users",
+        "Priced per internal user; customers, vendors and subs get free portal access",
+        "Unlimited users on all plans"
+      ],
+      [
+        "Free trial",
+        "None; 30-day money-back guarantee on monthly plans",
+        "Not confirmed on the vendor page"
+      ],
+      [
+        "Setup and onboarding",
+        "No setup fees; free implementation, training and support",
+        "Onboarding reported at $500 to $2,000 in year one"
+      ],
+      [
+        "Built for",
+        "Small and mid-size contractors",
+        "Home builders and remodelers"
+      ],
+      [
+        "Where the price comes from",
+        "Vendor pricing page",
+        "Third-party reports"
+      ]
+    ]
+  },
+  "calc": {
+    "title": "What a team costs per month",
+    "headers": [
+      "Internal users",
+      "JobTread (monthly billing)",
+      "Buildertrend Advanced (reported range)"
+    ],
+    "rows": [
+      [
+        "1",
+        "$199",
+        "$499 to $799"
+      ],
+      [
+        "5",
+        "$279",
+        "$499 to $799"
+      ],
+      [
+        "10",
+        "$379",
+        "$499 to $799"
+      ],
+      [
+        "20",
+        "$529",
+        "$499 to $799"
+      ]
+    ],
+    "note": "JobTread figures use its listed monthly per-user prices: $199 base with one user, $20 for each added user from 2 to 10, and $15 for users 11 to 20. Annual billing is about 20 percent less. Buildertrend figures are the range third-party reports give for the Advanced plan, the first with estimating, and are not confirmed on the vendor page. Buildertrend does not charge per user, so its price does not change with headcount."
+  },
+  "verdict": [
+    "In the cost table below, JobTread costs less than Buildertrend's Advanced plan at 1, 5 and 10 users, and is roughly level at 20 users against the lowest reported Buildertrend figure.",
+    "A large office or many part-time users can tip toward Buildertrend, because it does not charge per user, if the estimating tier is what you need.",
+    "Neither is built for commercial bid invitations. For that, look at the bid networks."
+  ],
+  "lastChecked": "2026-10-03"
+}

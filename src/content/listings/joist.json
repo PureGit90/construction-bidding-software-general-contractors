@@ -1,0 +1,20 @@
+{
+  "name": "Joist",
+  "directoryType": "software-tool",
+  "summary": "Estimating, invoicing and payments for contractors, with AI estimate creation in every plan.",
+  "differentiator": "The cheapest paid route here, with a catch: Basics is $8.34 a month billed annually but allows only 5 documents a month, and unlimited documents start at Pro ($14.17). Change orders and license and insurance display start at Elite ($26.67), and scheduling jobs is the newer Run tier ($58.33 with an introductory discount). The free plan has been discontinued, so the 14-day trial is the only free option.",
+  "url": "https://www.joist.com/",
+  "pricing": "Basics $8.34, Pro $14.17, Elite $26.67 and Run $58.33 per month billed annually; Run includes an introductory 30 percent discount. Annual billing gives two months free. All plans include unlimited clients, estimates, invoicing, payments and AI estimate creation. 14-day trial, no card. An AI Receptionist add-on is $49 per month.",
+  "address": null,
+  "category": "Quoting and invoicing for small contractors",
+  "side": "service",
+  "whoPays": "Subscriber pays per plan",
+  "entryPrice": "$8.34 per month billed annually",
+  "pricingConfidence": "vendor",
+  "bestFor": "Part-time and full-time solo contractors who want estimates and invoices at the lowest monthly cost.",
+  "skipIf": "You run a team with bid management needs; this is built for owner-operators.",
+  "lastChecked": "2026-10-03",
+  "sources": [
+    "https://www.joist.com/pricing/"
+  ]
+}
