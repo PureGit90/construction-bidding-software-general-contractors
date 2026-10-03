@@ -49,7 +49,7 @@ const conf = CONFIDENCE[d.pricingConfidence];
     {d.pricing && <p>{d.pricing}</p>}
     <p class="small"><strong>{conf.label}.</strong> {conf.note} Last checked {d.lastChecked}.</p>
 
-    <p><a class="btn" href={d.url} rel="sponsored nofollow noopener" target="_blank">Visit {d.name} (opens in a new tab)</a></p>
+    <p><a class="btn" href={d.affiliateUrl ?? d.url} rel="sponsored nofollow noopener" target="_blank">Visit {d.name} (opens in a new tab)</a></p>
 
     <h2>Sources</h2>
     <ul class="sources">

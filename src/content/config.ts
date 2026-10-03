@@ -8,6 +8,9 @@ const listings = defineCollection({
     summary: z.string().min(1),
     differentiator: z.string().min(1),
     url: z.string().url(),
+    // Tracked referral link, set once an affiliate program approves us. The plain
+    // url stays as the fallback so a listing never links nowhere.
+    affiliateUrl: z.string().url().optional(),
     pricing: z.string().nullable().optional(),
     address: z.string().nullable().optional(),
     category: z.string().min(1),
